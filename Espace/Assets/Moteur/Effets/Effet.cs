@@ -6,6 +6,8 @@ namespace AssemblyCSharp
 {
 	public class Effet
 	{
+		public int priorite = 0;
+
 		public Effet ()
 		{
 

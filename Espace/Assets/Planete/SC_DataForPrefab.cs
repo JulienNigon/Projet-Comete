@@ -9,7 +9,7 @@ using System.Collections;
 public class SC_DataForPrefab : MonoBehaviour {
 
 	public float rotationX = 0;
-	public float rotationZ = 0; //rajouté par jacques mais ne fonctionne pas encore
+	public float rotationZ = 0;
 	public float decalageEnX = 0;
 	public float decalageEnY = 0;
 	public float decalageEnZ = 0;

@@ -16,6 +16,9 @@ namespace AssemblyCSharp
 		public List<Colon> colonsEveilles = new List<Colon> ();
 		public float moral = 100.0f;
 
+		public float alignementBien = 0.0f;
+		public float alignementOrdre = 0.0f;
+
 		public Colonie ()
 		{
 			Debug.Log ("Creation de la colonie");
@@ -104,6 +107,14 @@ namespace AssemblyCSharp
 				}
 			}
 			return estPresent;
+		}
+
+		public void modifierAlignementBien(float modif) {
+			alignementBien += modif;
+		}
+
+		public void modifierAlignementOrdre(float modif) {
+			alignementOrdre += modif;
 		}
 	}
 }

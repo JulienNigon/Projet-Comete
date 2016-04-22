@@ -8,6 +8,7 @@ namespace AssemblyCSharp
 	{
 		public TypeDeBatiment type;
 		public Case kase;
+		public bool pasEffetBloquant = true;
 
 		public Batiment (TypeDeBatiment type, Case kase)
 		{
@@ -36,7 +37,12 @@ namespace AssemblyCSharp
 		 */
 		public void jouer() {
 			foreach (Effet effet in type.effets) {
-				effet.jouer (this);
+				if (pasEffetBloquant) {
+					effet.jouer (this);
+				} else {
+					pasEffetBloquant = true;
+					break;
+				}
 			}
 		}
 	}

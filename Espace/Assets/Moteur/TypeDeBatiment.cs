@@ -21,6 +21,12 @@ namespace AssemblyCSharp
 		}
 
 		public void ajouterEffet(Effet effet) {
+			for (int i = 0; i < effets.Count; i++) {
+				if (effets [0].priorite < effet.priorite) {
+					effets.Insert (i,effet);
+					break;
+				}
+			}
 			effets.Add (effet);
 		}
 	}

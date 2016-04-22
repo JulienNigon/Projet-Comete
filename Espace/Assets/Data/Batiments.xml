@@ -10,6 +10,20 @@
 		<Prefab>Navette_Prefab</Prefab>
 		<Description_Fr>La navette.</Description_Fr>
 	</Batiment>
+
+	<Batiment>
+		<Nom>Service d'ordre</Nom>
+		<Categorie>MINISTRE</Categorie>
+		<Niveau>0</Niveau>
+		<Poids>90</Poids>
+		<Prefab>Navette_Prefab</Prefab>
+		<Description_Fr>Service d'ordre qui veille au grain.</Description_Fr>
+		<Effet>
+			<Type>CONSOMMER</Type>
+			<Ressource>OUTIL</Ressource>
+			<Quantite>1</Quantite>
+		</Effet>
+	</Batiment>
 	
 	<Batiment>
 		<Nom>Forage</Nom>
